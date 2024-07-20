@@ -1,24 +1,16 @@
-# README
+# my_diary
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## サイト概要
+### サイトテーマ
+内容が公開されずに日々の記録を作ることができる日記アプリケーション
 
-Things you may want to cover:
+### テーマを選んだ理由
+SNSでのつながりに疲れを感じた人でも、密かに日記をつける場ができたらいいなと思った
 
-* Ruby version
+### ターゲットユーザ
+SNS疲れを感じる方
+こっそり日記を手軽につけたい方
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### 主な利用シーン
+日常のささやかな幸せや喜びを記録しておきたいとき
+後から振り返りたい出来事があったとき
