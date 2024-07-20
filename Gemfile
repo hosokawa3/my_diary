@@ -66,3 +66,6 @@ group :test do
   gem "selenium-webdriver"
 end
 gem 'devise'
+gem 'bootstrap', '~> 5.3.3'
+gem 'jquery-rails'
+gem "sassc-rails"
