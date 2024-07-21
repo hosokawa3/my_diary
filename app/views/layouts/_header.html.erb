@@ -2,6 +2,23 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <% if user_signed_in? %>
+                <a class="navbar-brand" href="/">MyDiary</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li>
+                            <%= link_to "新しく書く", "#",class: 'nav-link text-dark' %>
+                        </li>
+                        <li>
+                            <%= link_to "記事一覧", "#",class: 'nav-link text-dark' %>
+                        </li>
+                        <li>
+                            <%= link_to "ログアウト", destroy_user_session_path, data: { turbo_method: :delete }, class: 'nav-link text-dark' %>
+                        </li>
+                    </ul>
+                </div>
             <% else %>
                 <a class="navbar-brand" href="/">MyDiary</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,7 +27,13 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav ml-auto">
                         <li>
-                            <%= link_to "使い方", "#",class: 'nav-link text-dark' %>
+                            <%= link_to "使い方", "/about",class: 'nav-link text-dark' %>
+                        </li>
+                        <li>
+                            <%= link_to "新規登録", new_user_registration_path,class: 'nav-link text-dark' %>
+                        </li>
+                        <li>
+                            <%= link_to "ログイン", new_user_session_path,class: 'nav-link text-dark' %>
                         </li>
                     </ul>
                 </div>
