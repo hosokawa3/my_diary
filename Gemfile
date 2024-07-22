@@ -70,3 +70,4 @@ gem 'bootstrap', '~> 5.3.3'
 gem 'jquery-rails'
 gem "sassc-rails"
 gem 'mini_racer'
+gem 'simple_calendar'
