@@ -71,3 +71,5 @@ gem 'jquery-rails'
 gem "sassc-rails"
 gem 'mini_racer'
 gem 'simple_calendar'
+gem 'carrierwave'
+gem 'mini_magick'
