@@ -1,3 +1,41 @@
 @import "bootstrap";
 @import "trix";
 @import "actiontext";
+
+.simple-calendar {
+    display: table;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .simple-calendar th, .simple-calendar td {
+    border: 1px solid #ddd;
+    vertical-align: top;
+    width: 14.28%; /* 100% / 7 days */
+    padding: 8px;
+    height: 100px; /* 各セルの高さを統一 */
+  }
+  
+  .simple-calendar th {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .simple-calendar .day {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .simple-calendar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .simple-calendar li {
+    margin: 0 0 5px 0;
+  }
+  
+  .simple-calendar .col {
+    padding: 8px;
+  }
+  
